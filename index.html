@@ -4,46 +4,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/project.css">
+    <link rel="stylesheet" href="./css/aside.css">
+    <link rel="stylesheet" href="./css/nav.css">
     <title>Home | Vyankatesh</title>
 </head>
 
 <body>
+    <nav>
+        <a href="#about-me">About me</a>
+        <a href="#socials">My Socials</a>
+        <a href="#projects">My Projects</a>
+    </nav>
     <aside>
-        <h1># Hello, I am Vyankatesh.</h1>
-
+        <h3>
+            Hello, I am Vyankatesh.
+        </h3>
+        <div id="about-me">
+            <h1># About me.</h1>
+            <p id="short-dsc">
+                I was born in 2006. I recently passed 12th Grade, and will be going to college soon.
+            </p>
+        </div>
         <div id="socials">
-            <h2>
-                ## My socials
-            </h2>
+            <h1>
+                # My Socials.
+            </h1>
             <form action="https://discordapp.com/users/912351813041262662" target="_blank">
                 <button class="contact" type="submit">
-                    My Discord profile
+                    Contact me on Discord.
+                </button>
+            </form>
+            <form action="https://www.instagram.com/vyankateshsdande/" target="_blank">
+                <button class="contact" type="submit">
+                    Find me on Instagram.
                 </button>
             </form>
             <form action="https://github.com/vyduck" target="_blank">
                 <button class="contact" type="submit">
-                    My Github profile
+                    Check out my Github profile.
+                </button>
+            </form>
+            <form action="mailto:vyankateshdande.vd@gmail.com" target="_blank">
+                <button class="contact" type="submit">
+                    Email me.
                 </button>
             </form>
         </div>
     </aside>
-    <div id="main">
-        <h2>## Projects</h2>
-        <div class="project">
+    <main id="projects">
+        <h1># Projects I have done</h1>
+        <article class="project">
             <h3 class="project-title">Tally | Discord bot</h3>
-            <div class="project-tags">
-                Tags:
-                <span class="project-tag">NodeJS</span>
-                <span class="project-tag">discord.js</span>
-                <span class="project-tag">Discord</span>
-            </div>
-            <div class="project-description">I created this bot in Feb, 2024. And then forgot about it due to exams.
+            <p class="project-description">
+                I created this bot in Feb, 2024. And then forgot about it due to exams.
                 When my exams ended in June, 2024, I started to improve the bot, but realized it would be better to
-                rewrite it. So, I re-wrote the bot in two weeks with some new features.</div>
-            <a href="https://top.gg/bot/1223871354432917605">Project details.</a>
-        </div>
-    </div>
+                rewrite it. So, I re-wrote the bot in the last two weeks of June 2024 with some new features.
+            </p>
+            <p class="project-description">
+                The bot is written in <span class="imp">Javascript</span> and uses <span class="imp">NodeJS</span>
+                runtime.
+                It communicates with Discord using the <span class="imp">discord.js</span> module.
+            </p>
+            <div class="skills">
+                Javascript
+            </div>
+            <div class="project-links">
+                Links:
+                <a class="project-link" href="https://top.gg/bot/1223871354432917605">Top.gg page.</a>
+            </div>
+        </article>
+    </main>
 </body>
 
 </html>
