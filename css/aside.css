@@ -1,7 +1,11 @@
+:root {
+    --aside-color: #dfdfdf;
+}
+
 aside {
     padding: 20px;
 
-    background-color: #dfdfdf;
+    background-color: var(--aside-color);
 
     display: flex;
     flex-direction: column;

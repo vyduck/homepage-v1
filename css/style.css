@@ -1,3 +1,7 @@
+:root {
+    --body-color: #f0f0f0;
+}
+
 body {
     width: 100vw;
     height: 100vh;
@@ -5,7 +9,7 @@ body {
     padding: 0;
     margin: 0;
 
-    background-color: #f0f0f0;
+    background-color: var(--body-color);
 
     font-size: 16px;
     font-family: monospace;
