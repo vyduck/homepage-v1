@@ -1,23 +1,9 @@
-#projects {
-    padding: 0px 25px;
-
-    overflow: auto;
-}
-
 .project {
-    width: calc(100% - 50px);
-
     padding: 0.1px 20px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 
     border: 2px solid black;
     border-radius: 5px;
-}
-
-#projects>h2 {
-    margin-bottom: 20px;
-
-    border-bottom: solid black 2px;
 }
 
 .project>* {
@@ -28,25 +14,19 @@
     border-bottom: solid black 1px;
 }
 
-.project-description {
-    text-indent: 15px;
-}
-
 .project-links::-webkit-scrollbar,
 .skills::-webkit-scrollbar {
     display: none;
 }
 
-.project-links,
-.skills {
-    padding: 10px;
+.project-links {
+    padding-left: 15px;
 
     display: flex;
     flex-direction: row;
     overflow: auto;
 
-    border: solid black 2px;
-    border-radius: 5px;
+    border-left: solid black 2px;
 
     text-wrap: nowrap;
 
@@ -58,12 +38,4 @@
     min-width: fit-content;
 
     margin: 0px 5px;
-}
-
-
-@media only screen and (min-width:1120px) {
-    #projects {
-        width: 70vw;
-        max-height: 100vh;
-    }
 }

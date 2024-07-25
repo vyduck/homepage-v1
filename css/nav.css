@@ -1,13 +1,20 @@
 nav {
+    padding: 20px;
     border-bottom: solid black 2px;
 
     background-color: #dfdfdf;
 
+    display: flex;
     flex-direction: row;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
 }
 
-nav>a:any-link {
+nav>h2 {
+    margin: 0;
+}
+
+#nav-links>a:any-link {
     color: black;
     min-width: fit-content;
     padding: 10px;
@@ -17,14 +24,8 @@ nav>a:any-link {
     border-radius: 5px;
 }
 
-@media only screen and (min-width:1120px) {
-    nav {
+@media only screen and (max-width: 550px) {
+    #nav-links {
         display: none;
-    }
-}
-
-@media only screen and (max-width:1120px) {
-    nav {
-        display: flex;
     }
 }
