@@ -5,60 +5,119 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Home | Vyankatesh</title>
+    <title>About Vyankatesh</title>
 
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/nav.css">
-
-    <link rel="stylesheet" href="/css/about-me.css">
+    <link rel="stylesheet" href="/style.css">
 </head>
 
 <body>
-    <nav>
-        <h2>## Home</h2>
-
-        <div id="nav-links">
-            <a href="/">About me</a>
-            <a href="/projects.html">Projects</a>
-        </div>
-    </nav>
     <main>
-        This page will be updated soon-ish. For now, it only contains some of my socials.
-
-        <h2>
-            ## My Socials.
-        </h2>
-        <div id="socials">
-            <form action="https://discordapp.com/users/912351813041262662" target="_blank">
-                <button class="contact" type="submit">
-                    Discord
-                </button>
-            </form>
-            <form action="https://www.instagram.com/vyankateshsdande/" target="_blank">
-                <button class="contact" type="submit">
-                    Instagram
-                </button>
-            </form>
-            <form action="https://github.com/vyduck" target="_blank">
-                <button class="contact" type="submit">
-                    Github
-                </button>
-            </form>
-            <form action="mailto:vyankateshdande.vd@gmail.com" target="_blank">
-                <button class="contact" type="submit">
-                    Email
-                </button>
-            </form>
-            <form action="https://www.chess.com/member/vyankateshdande" target="_blank">
-                <button class="contact" type="submit">
-                    Chess.com
-                </button>
-            </form>
-            <form action="https://lichess.org/@/Vyankatesh_Dande" target="_blank">
-                <button class="contact" type="submit">
-                    lichess.org
-                </button>
-            </form>
+        <nav>
+            <a href="#about-me">About me</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact-me">Contact me</a>
+        </nav>
+        <section id="about-me">
+            <h2 class="section-title">
+                About me
+            </h2>
+            Hello, I am <span class="imp">Vyankatesh S Dande.</span> I am currently pursuing a B. Tech. degree in CSE
+            through <span class="imp">NIT Jalandhar</span>. I like to play chess and basketball. <br> I have made many discord bots but did not
+            document most of them. Check out my documented projects below!
+        </section>
+        <section id="projects">
+            <h2 class="section-title">
+                Projects
+            </h2>
+            <article class="project">
+                <h3 class="project-title">Lights off! | Game</h3>
+                <p class="project-description">
+                    Lights off is a simple game where the player has to turn off all the lights. I have implemented
+                    different difficulty levels - from Easy to Very hard, and different sizes - from 4x4 grid to 8x8
+                    grid.
+                </p>
+                <p class="project-description">
+                    This simple game was made using <span class="imp">HTML</span>, <span class="imp">CSS</span>, and
+                    <span class="imp">JavaScript</span>.
+                </p>
+                <div class="project-links">
+                    Links:
+                    <a class="project-link" href="/lights-off/">Play</a>
+                </div>
+            </article>
+            <article class="project">
+                <h3 class="project-title">Vel | Discord bot</h3>
+                <p class="project-description">
+                    I created this bot in the first week of July, 2024 with inspiration from a Reddit user.
+                </p>
+                <p class="project-description">
+                    It tracks how much time you spend in a voice channel. This data can then be used to generate
+                    leaderboards. The bot also allows users to group channels, for example, there might be a
+                    productivity group, a gaming group, or just a chatting group. Leaderboards can also be generated
+                    using these groups.
+                </p>
+                <p class="project-description">
+                    The bot is written in <span class="imp">JavaScript</span> and uses <span class="imp">NodeJS</span>
+                    runtime. It stores information using <span class="imp">MongoDB</span>.
+                    It communicates with Discord using the <span class="imp">discord.js</span> module.
+                </p>
+                <div class="project-links">
+                    Links:
+                    <a class="project-link"
+                        href="https://discord.com/oauth2/authorize?client_id=1259945499146977351">Invite
+                        bot.</a>
+                    <a class="project-link" href="https://top.gg/bot/1259945499146977351">Top.gg page.</a>
+                </div>
+            </article>
+            <article class="project">
+                <h3 class="project-title">Tally | Discord bot</h3>
+                <p class="project-description">
+                    I created this bot in Feb, 2024. And then forgot about it due to exams.
+                    When my exams ended in June, 2024, I started to improve the bot, but realized it would be better to
+                    rewrite it. So, I re-wrote the bot in the last two weeks of June 2024 with some new features.
+                </p>
+                <p class="project-description">
+                    Tally can keep count of anything that could be counted in numbers. Kills in a game, total steps
+                    walked,
+                    total words written, etc.
+                </p>
+                <p>
+                    Previously the bot stored information on local file system. I upgraded the bot to store the
+                    information in an online MongoDB instance at the end of October 24.
+                </p>
+                <p class="project-description">
+                    The bot is written in <span class="imp">JavaScript</span> and uses <span class="imp">NodeJS</span>
+                    runtime. It stores information using <span class="imp">MongoDB</span>.
+                    It communicates with Discord using the <span class="imp">discord.js</span> module.
+                </p>
+                <div class="project-links">
+                    Links:
+                    <a class="project-link"
+                        href="https://discord.com/oauth2/authorize?client_id=1223871354432917605">Invite
+                        bot.</a>
+                    <a class="project-link" href="https://top.gg/bot/1223871354432917605">Top.gg page.</a>
+                </div>
+            </article>
+        </section>
+        <section id="contact-me">
+            <h2 class="section-title">
+                Contact me
+            </h2>
+            <p id="email" class="contact">
+                <span class="imp">Email</span> me at <a href="mailto:vyankateshdande.vd@gmail.com">vyankateshdande.vd@gmail.com</a>.
+            </p>
+            <p id="discord" class="contact">
+                Chat with me on <span class="imp">Discord</span> at <a href="https://discordapp.com/users/912351813041262662">fancy3081</a>
+            <div class=""></div>
+            </p>
+            <p id="github" class="contact">
+                Check out my <span class="imp">Github</span> profile at <a href="http://github.com/vyduck">@vyduck</a>
+            <div class=""></div>
+            </p>
+            <p id="linkedin" class="contact">
+                Follow me on <span class="imp">LinkedIn</span> at <a href="">404 not found</a>.
+            </p>
+        </section>
         </div>
     </main>
 </body>
